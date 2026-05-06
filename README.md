@@ -1,30 +1,6 @@
-# sslCheck.ps1
+# SSL Check Tool
 
 A PowerShell HTTPS diagnostic tool for enterprise environments. Goes far beyond `Invoke-WebRequest` and `Test-NetConnection` — from DNS resolution through to full TLS inspection, real-world trust validation, certificate security analysis, HTTP response, ICMP ping, certificate export, and HTML report generation. All in a single staged run with no external modules or installs required.
-
----
-
-## Repo Name Suggestion
-
-**`sslCheck`**
-
-Clean, searchable, matches the script name exactly. Simple and professional.
-
-## Repo Description Suggestion
-
-> Enterprise HTTPS diagnostic tool for PowerShell. Staged DNS, TCP, TLS, certificate inspection, real-world trust validation, HTTP response, and ICMP ping — with HTML report and certificate export. No external modules required.
-
----
-
-## Why This Tool Exists
-
-The need started with teams using `Invoke-WebRequest` to check HTTPS endpoints and getting unhelpful errors like:
-
-> *The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel.*
-
-`sslCheck.ps1` tells you exactly why — which CA issued the cert, whether it is trusted on the current machine, what TLS version was negotiated, when the cert expires, and what the HTTP response actually was. It answers the question `Invoke-WebRequest` cannot.
-
----
 
 ## Requirements
 
