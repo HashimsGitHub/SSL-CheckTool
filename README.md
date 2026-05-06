@@ -86,6 +86,12 @@ Stage 4*   Legacy TLS Audit           SSL2/3, TLS 1.0-1.3 probes
 
 ## What Gets Checked
 
+### Stage 1 — DNS Resolution
+Resolves the hostname using an async lookup with a 3-second timeout. Displays all resolved IP addresses — useful for confirming whether a private or public address is being hit. Handles split-horizon DNS and internal zones. Raw IP addresses bypass this stage entirely.
+
+### Stage 2 — TCP Reachability
+Performs an explicit TCP connect to the target host and port with configurable timeout and retry support. Connection time is reported in milliseconds. On failure, automatically runs a fast Traceroute (capped at 15 hops with reverse DNS lookups suppressed) to identify where in the network path traffic is being dropped — firewall, routing black hole, or unreachable host. Suppressed with `-SkipTraceroute`.
+
 ### Stage 3a — TLS Handshake & Certificate Inspection
 Uses a certificate bypass connection to inspect the cert regardless of whether it is trusted on the current machine. Reports:
 
