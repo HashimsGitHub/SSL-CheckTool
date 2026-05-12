@@ -11,6 +11,13 @@ A PowerShell HTTPS diagnostic tool for enterprise environments. Goes far beyond 
 - Traceroute requires `Test-NetConnection` (PS 4.0+ / Windows 8+)
 
 ---
+## Screenshots
+<img width="1159" height="814" alt="image" src="https://github.com/user-attachments/assets/9b002e05-108f-49c6-b737-dc21ebf2624e" />
+<img width="948" height="856" alt="image" src="https://github.com/user-attachments/assets/9ec9522d-6c5f-47e8-9fe6-facd7480ab17" />
+<img width="835" height="168" alt="image" src="https://github.com/user-attachments/assets/272f4ae0-9cff-4794-83a2-f8f280b7703e" />
+
+
+---
 
 ## How It Works
 
